@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+
+<div style=" margin:50px auto" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 authentication">
+ <h1 style="text-align:center">
+	LogIn to YelpCamp
+ </h1>
+  <form action="/login" method="POST">
+	<input class="logsign d-flex form-control d-lg-block " type="text" placeholder="username" name="username"><br>
+	<input class="logsign d-flex form-control d-lg-block" type="password" placeholder="password" name="password"><br>
+	<input class="logsign d-flex justify-content-center d-lg-block btn btn-primary btn-block" type="submit">
+  </form>
+</div>
+<%- include("partials/footer") %>

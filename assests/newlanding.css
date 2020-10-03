@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+}
+.section{
+    height:100vh;
+    width:100%;
+}
+.s1{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../images/camp1.jpg");
+    
+}
+#logo{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.s2{
+    background-image:url("../images/camp2.jpg");
+    color:black;
+    padding:50px;
+}
+.s2 p{
+   
+    font-size:24px;
+    text-align: center;
+}
+.s2 h2{
+    text-align: center;
+    font-size:50px;
+}
+#logo path:nth-child(1){
+    stroke-dasharray: 372.14984130859375;
+    stroke-dashoffset: 372.14984130859375;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(2){
+    stroke-dasharray:515.263671875 ;
+    stroke-dashoffset:515.263671875 ;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray:239.32797241210938 ;
+    stroke-dashoffset:239.32797241210938 ;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray:581.254150390625 ;
+    stroke-dashoffset:581.254150390625  ;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 508.55194091796875;
+    stroke-dashoffset: 508.55194091796875 ;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(6){
+    stroke-dasharray:506.44622802734375 ;
+    stroke-dashoffset:506.44622802734375 ;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 668.7836303710938;
+    stroke-dashoffset:668.7836303710938 ;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 581.2545166015625;
+    stroke-dashoffset: 581.2545166015625;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+.headline{
+    color:white;
+    font-size:30px;
+    top:65%;
+    right:22%;
+    position:absolute;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+   
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    
+    .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    }
+
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}

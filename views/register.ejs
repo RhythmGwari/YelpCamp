@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+<div style=" margin:50px auto" class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+	<h1 style="text-align:center">
+		SignUp to YelpCamp
+	</h1>
+   <form action="/register" method="POST">
+	<input class="logsign d-flex form-control d-lg-block" type="text" placeholder="username" name="username"><br>
+	<input class="logsign d-flex form-control d-lg-block" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"	title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="password" name="password"><br>
+	<input class="logsign d-flex justify-content-center d-lg-block btn btn-primary btn-block" type="submit" style="text-align:center">
+   </form>
+</div>
+<%- include("partials/footer") %>

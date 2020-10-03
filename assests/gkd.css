@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=PT+Sans+Narrow&family=Quicksand:wght@600&family=Source+Code+Pro&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.s1{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../images/cupcake-md1.jpg");
+    height:600px;
+    object-fit: cover;
+    background-size: cover;
+    margin-top:10px;
+}
+body{
+    background-image:url("../images/marble.jpg");
+    
+}
+ #brand{
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:65px;
+
+}
+#brand path:nth-child(1){
+    stroke-dasharray:604.4829711914062; 
+    stroke-dashoffset:604.4829711914062;
+    animation: line-anim 2s ease forwards
+}
+#brand path:nth-child(2){
+    stroke-dasharray: 226.94400024414062;
+    stroke-dashoffset:226.94400024414062 ;    
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#brand path:nth-child(3){
+    stroke-dasharray:512.3522338867188 ;
+    stroke-dashoffset:512.3522338867188 ;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+#brand path:nth-child(4){
+    stroke-dasharray:610.2321166992188;
+    stroke-dashoffset:610.2321166992188;  
+    animation: line-anim 2s ease forwards 0.9s;
+}
+#brand path:nth-child(5){
+    stroke-dasharray:490.2921142578125 ;
+    stroke-dashoffset:490.2921142578125 ;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+#brand path:nth-child(6){
+    stroke-dasharray:512.352294921875 ;
+    stroke-dashoffset:512.352294921875 ;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+#brand path:nth-child(7){
+    stroke-dasharray:463.96795654296875;
+    stroke-dashoffset:463.96795654296875;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+#brand path:nth-child(8){
+    stroke-dasharray:549.0670166015625 ;
+    stroke-dashoffset:549.0670166015625 ;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+#brand path:nth-child(9){
+    stroke-dasharray:93.02501678466797 ;
+    stroke-dashoffset:93.02501678466797 ;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+#brand path:nth-child(10){
+    stroke-dasharray:493.9141540527344 ;
+    stroke-dashoffset:493.9141540527344 ;
+    animation: line-anim 2s ease forwards 2.7s;
+}
+
+.products{
+    height:350px;
+    width:350px;
+    box-shadow: 2px 2px 10px;
+    
+}
+.products:hover{
+    height:360px;
+    width:360px;
+}
+.s2{
+    margin-top:30px;
+   
+}
+section .heading{
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 5px;
+    font-size:50px;
+    text-align: center;
+    display: block;
+    transition:0.5s;
+    /* font-weight: 900; */
+    margin-bottom:60px;
+}
+#name1{
+    position:absolute;
+    top:190%;
+    left:14%;
+    font-size:24px;
+    color:#654321;
+    z-index:1;
+    font-family: 'Source Code Pro', monospace;
+}
+#name2{
+    position:absolute;
+    top:190%;
+    left:48%;
+    font-size:24px;
+    color:#654321;
+    z-index:1;
+    font-family: 'Source Code Pro', monospace;
+}
+#name3{
+    position:absolute;
+    top:190%;
+    left:76%;
+    font-size:24px;
+    color:#654321;
+    z-index:1;
+    font-family: 'Source Code Pro', monospace;
+}
+.description{
+    width:100%;    
+    background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url("../images/nikchoco.jpg");
+    /* position:absolute; */
+    z-index:-1;
+    height:100vh;
+    color:white;
+}
+.description p{
+    font-size:20px;
+    padding:50px;
+    width:60%;
+    
+}
+.description h2{
+    text-align: left;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 8px;
+    font-size:42px;
+    padding-top:150px;
+    padding-left:50px;
+}
+section{
+    height:100vh;
+    width:100%;
+}
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
