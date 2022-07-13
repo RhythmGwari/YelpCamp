@@ -11,6 +11,7 @@ var express 			  = require("express"),
 var campgroundRoutes = require("./routes/campgrounds");
 var commentRoutes    = require("./routes/comments");
 var authRoutes       = require("./routes/auth");
+var PORT = process.env.PORT || 3000;
 
 var seedDB 	= require("./seeds.js"),
     User 	= require("./models/user.js"),
@@ -59,6 +60,6 @@ app.use(authRoutes);
 
 
 
-app.listen(3000, function(req, res){
+app.listen(PORT, function(req, res){
 	console.log("server started");
 });
