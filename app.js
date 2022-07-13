@@ -22,7 +22,7 @@ var seedDB 	= require("./seeds.js"),
 var app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/yelpCamp",{
+mongoose.connect("mongodb+srv://rhythmGwari:suHNcEBe4eyJHvoS@cluster0.gktry.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{
 				useNewUrlParser: true,
 				useUnifiedTopology: true
 });

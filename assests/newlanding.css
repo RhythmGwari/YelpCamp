@@ -70,6 +70,11 @@
     stroke-dashoffset: 581.2545166015625;
     animation: line-anim 2s ease forwards 0.3s;
 }
+#logo path:nth-child(9){
+    stroke-dasharray: 581.2545166015625;
+    stroke-dashoffset: 581.2545166015625;
+    animation: line-anim 2s ease forwards 0.3s;
+}
 .headline{
     color:white;
     font-size:30px;

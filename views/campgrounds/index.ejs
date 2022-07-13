@@ -4,7 +4,7 @@
 	<header class="jumbotron">
 		<div class="container">
 			<h1>
-				WELCOME TO YELP CAMP!
+				WELCOME TO GOCAMPERS
 			</h1>
 			<p>
 				The best  handpicked Campgrounds all over India for you. 
@@ -20,15 +20,17 @@
 				Our most famous campgrounds.
 			</h3>
 		</div>
-    <div class="row d-flex justify-content-around">
+    <div class="row d-flex ">
 		<% for(var i=0; i<campgrounds.length; i++){ %>
-			<div class="row col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12" , style="margin-bottom:20px;">
+			<div class="row col-lg-4 col-md-5 col-sm-10 mx-1" , style="margin-bottom:20px;">
+			<!-- <div class="row col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12" , style="margin-bottom:20px;"> -->
 				<div class="card index-pic index_card">
 					<img class="card-img-top" src="<%= campgrounds[i].image %>">
 					<div class="card-body">					
 						  <div class="card-title d-flex justify-content-center align-items-center" >
 								<%= campgrounds[i].name %>  
 						  </div>
+						<p><%= campgrounds[i].description.substring(0,300) %></p>
 						<p>
 							<a href="/campgrounds/<%=campgrounds[i]._id%>" class="btn btn-primary d-flex 									justify-content-center">More Info.</a>
 						</p>
